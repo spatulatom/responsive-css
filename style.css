@@ -1,0 +1,209 @@
+/* Universal Styles */
+
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  a {
+    color: seashell;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+
+  }
+  
+  /* Header Section */
+  
+  header {
+    width: 100%;
+    position: fixed;
+    
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+  }
+  
+  header img {
+    height: 50px;
+    padding-left: 10px;
+  }
+  .mobile{
+      display: none;
+  }
+
+  nav {
+      
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  nav span {
+    display: inline-block;
+    padding: 20px 5px;
+  }
+  nav span a {
+    text-decoration: none;
+    font-size: 1 rem;
+  }
+  nav span a:hover{
+      color: green;
+      
+  }
+  
+  /* Main Section */
+  
+  .main {
+      
+    padding-top: 69px;
+    opacity: 0.9;
+    
+    
+  }
+  
+  /* Mission Section */
+  /* dont understand why afeter applying flex, mission moves to the middle?
+  and flex-shrink dosent work here */
+  .flexbox{
+      display: flex;
+  }
+  
+  #mission {
+      flex-shrink: 1;
+    height: 700px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    padding-top: 70px;
+  }
+  
+  #mission .content {
+     
+     
+    margin: auto 0;
+    background-color: black;
+width:100%;
+  }
+  
+  /* Store Section */
+
+  #teas{
+      
+      padding: 20px 0 20px 0;
+  }
+  .flexitems{
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+  }
+  
+  #store {
+    
+    
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  
+  .item {
+    padding: 5px;
+  }
+  
+  .item img {
+    height: 200px;
+    margin: 10px;
+    
+    
+  }
+  
+  .item span {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Location Section */
+  .flexlocation{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  
+  .flex-container.locations {
+    padding-top: 5px;
+  }
+  
+  #locations {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    
+    padding: 70px 0 50px 0;
+  }
+  
+  #locations .flex-container {
+    margin: auto;
+    width: 1100px;
+  }
+  
+  .location {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Contact Section */
+  
+  #contact {
+    height: 200px;
+  }
+  
+  /* Footer Section */
+  
+  footer {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: 580px){
+      
+    .mobile{
+        display: block !important;
+        margin-right: 20px;
+        
+    }
+    .mobile a{
+        text-decoration: none;
+    }
+      .desktop {
+          display: none;
+      }
+    
+          #mission {
+            
+          height: 700px;
+          background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+          padding-top: 70px;
+          background-position: center;
+        }
+        
+      }  
